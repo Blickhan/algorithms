@@ -39,3 +39,8 @@ function arraysAreEqual(arr1, arr2) {
 
 maxSequence([4,4,13,2,3]) // 3
 maxSequence([5,10,12,1,10,4]) // 2
+maxSequence([1,2,2]) // 3
+maxSequence([2,2]) // 2
+maxSequence([2,2,1]) // 2
+maxSequence([1,2,3,5,2,2]) // 3
+maxSequence([5,4,3,1,2,3,1,2]) // 2
