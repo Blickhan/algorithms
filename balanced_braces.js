@@ -15,7 +15,8 @@ function isBalanced (str) {
             stack.push(char);
         }
         else if(closing_chars.indexOf(char) > -1) { // if this char is a closing char
-            if(stack[stack.length - 1] == opening_chars[closing_chars.indexOf(char)]) {
+            let opening_char = opening_chars[closing_chars.indexOf(char)];
+            if(stack[stack.length - 1] == opening_char) {
                 stack.pop();
             }
             else {
@@ -26,4 +27,5 @@ function isBalanced (str) {
     return stack.length == 0;
 }
 
+// YES, YES, NO, YES, NO, NO, NO
 console.log(braces(['{[()]}','[](){}','{[}]','{[](){()}[]}','[',']','][']))
